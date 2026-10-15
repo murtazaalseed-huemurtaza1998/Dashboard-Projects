@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Murtadha Hamed</title>
+<style>
+*{color:#fff;font-family:Arial,sans-serif;padding:0;margin:0;box-sizing:border-box}
+body{background:#001018;display:flex;min-height:100vh}
+.img-box{width:50px;height:50px;border-radius:50%;overflow:hidden;border:3px solid #fff;flex-shrink:0;background:#123;display:flex;align-items:center;justify-content:center;font-size:24px}
+.profile{display:flex;align-items:center;gap:15px;padding:10px;margin-bottom:20px}
+.profile h2{font-size:17px;text-transform:capitalize;white-space:nowrap}
+.menu{background:#112233;width:60px;height:100vh;padding:20px 10px;overflow:hidden;transition:.5s;position:sticky;top:0}
+.menu:hover{width:260px}
+ul{list-style:none;height:95%;position:relative}
+ul li a{display:flex;align-items:center;gap:25px;text-decoration:none;background:#2a3a4a;padding:12px;margin:8px 0;border-radius:8px;transition:.5s;white-space:nowrap}
+ul li a:hover,.active{background:#ffffff33}
+.icon{font-size:22px;width:30px;text-align:center}
+.log-out{position:absolute;width:100%;bottom:0;left:0}
+.log-out a{background:#a00}
+.content{width:100%;margin:10px;overflow:auto}
+.title-info{background:#0481ff;padding:15px;display:flex;align-items:center;justify-content:space-between;border-radius:8px;margin:10px 0;font-weight:bold;text-transform:capitalize}
+.data-info{display:flex;gap:15px;flex-wrap:wrap}
+.data-info .box{background:#112233;height:140px;flex-basis:150px;flex-grow:1;display:flex;align-items:center;justify-content:space-around;border-radius:8px;padding:20px;transition:.5s}
+.data-info .box:hover{background:#1a2a3a}
+.data-info .box .ic{font-size:40px}
+.data-info .box .data{text-align:center}
+.data-info .box .data p{opacity:.8;margin-bottom:5px;text-transform:capitalize}
+.data-info .box .data span{font-size:28px;font-weight:bold}
+table{width:100%;border-spacing:8px;text-align:center;margin-top:10px}
+td,th{background:#112233;height:50px;border-radius:8px}
+th{background:#0068ff}
+.price{background:#0a8a0a;padding:6px 12px;border-radius:6px}
+.count{background:#c8a000;color:#000;padding:6px 12px;border-radius:6px;font-weight:bold}
+</style>
+</head>
+<body>
+
+<div class="menu">
+<ul>
+<li class="profile">
+<div class="img-box">MH</div>
+<h2>murtadha hamed</h2>
+</li>
+<li><a href="#" class="active"><span class="icon">🏠</span><p>dashboard</p></a></li>
+<li><a href="#"><span class="icon">👥</span><p>clients</p></a></li>
+<li><a href="#"><span class="icon">📦</span><p>products</p></a></li>
+<li><a href="#"><span class="icon">📊</span><p>charts</p></a></li>
+<li><a href="#"><span class="icon">📝</span><p>posts</p></a></li>
+<li><a href="#"><span class="icon">⭐</span><p>favourites</p></a></li>
+<li><a href="#"><span class="icon">⚙️</span><p>settings</p></a></li>
+<li class="log-out"><a href="#"><span class="icon">🚪</span><p>log out</p></a></li>
+</ul>
+</div>
+
+<div class="content">
+<div class="title-info"><p>dashboard</p><span>📈</span></div>
+
+<div class="data-info">
+<div class="box"><span class="ic">👤</span><div class="data"><p>users</p><span>100</span></div></div>
+<div class="box"><span class="ic">📝</span><div class="data"><p>posts</p><span>500</span></div></div>
+<div class="box"><span class="ic">📦</span><div class="data"><p>products</p><span>400</span></div></div>
+<div class="box"><span class="ic">💰</span><div class="data"><p>revenue</p><span>$200</span></div></div>
+</div>
+
+<div class="title-info"><p>products</p><span>📋</span></div>
+
+<table>
+<thead><tr><th>product</th><th>price</th><th>count</th></tr></thead>
+<tbody>
+<tr><td>tv</td><td><span class="price">$123</span></td><td><span class="count">12</span></td></tr>
+<tr><td>phone</td><td><span class="price">$355</span></td><td><span class="count">22</span></td></tr>
+<tr><td>camera</td><td><span class="price">$503</span></td><td><span class="count">2</span></td></tr>
+<tr><td>swords</td><td><span class="price">$1000</span></td><td><span class="count">6</span></td></tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
